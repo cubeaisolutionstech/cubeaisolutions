@@ -762,13 +762,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
  
 /* ------------ Milestone ------------- */
-.mile-tittle{
-    font-size: 32px;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    padding-bottom: 15px;
-}
+
 .counter-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -776,6 +770,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 10rem 9%;
     margin-top: 5rem;
     position: relative;
+    background-color: lightcyan;
 }
 .counter-wrapper::before{
     position: absolute;
