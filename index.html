@@ -44,13 +44,13 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
- <!-- <body oncontextmenu="return false;"> -->
+ <body oncontextmenu="return false;"> 
   <body>
     <!-- Header Section Start -->
     <header class="header">
       <div class="container-fluid">
         <div class="logo pull-left">
-          <img src="img/header logo.png" class="logo-img"/>
+          <img src="img/cubeaisolutions.svg" class="logo-img"/>
           <h1 class="logo-title">CubeAISolutions</h1>
         </div>
 
@@ -542,47 +542,74 @@
       </div>
       <div class="counter-wrapper">
         <div class="counter">
-            <h1 class="count" data-target="20">0</h1>
-            <p>Projects</p>
+         <h1 id="count1" data-target="20">0</h1>
+         <p class="counter-p">Projects</p>
         </div>
         <div class="counter">
-            <h1 class="count" data-target="18">0</h1>
-            <p>Happy Clients</p>
+          <h1 id="count2" data-target="18">0</h1>
+          <p class="counter-p">Happy Clients</p>
         </div>
         <div class="counter">
-            <h1 class="count" data-target="10">0</h1>
-            <p>Collabrations</p>
+            <h1 id="count3" data-target="10">0</h1>
+            <p class="counter-p">Collabrations</p>
         </div>
         <div class="counter">
-            <h1 class="count" data-target="40">0</h1>
-            <p>Trainings and Workshop</p>
+            <h1 id="count4" data-target="40">0</h1>
+            <p class="counter-p">Trainings and Workshop</p>
         </div>
     </div>
   </div>
-  </section>
+  </section>
 
      <!-- js-milestones -->
      <script>
-      const counts = document.querySelectorAll('.count')
-const speed = 10
+      const speed = 9
+      // Function to start the counter animation when element is in view
+// Function to start the counter animation when element is in view
+// Function to start the counter animation when element is in view
+function startCounterAnimation(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const target = entry.target;
+            const counts = target.querySelectorAll('h1');
+            const maxTarget = Math.max(...Array.from(counts, count => Number(count.getAttribute('data-target'))));
 
-counts.forEach((counter) => {
-    function upDate(){
-        const target = Number(counter.getAttribute('data-target'))
-        const count = Number(counter.innerText)
-        console.log(target)
-        console.log(count)
-        const inc = target / speed
-        console.log(inc)        
-        if(count < target){
-            counter.innerText = Math.floor(inc + count) 
-            setTimeout(upDate, 15)
-        }else{
-            counter.innerText = target
+            counts.forEach((counter) => {
+                function update() {
+                    const targetCount = Number(counter.getAttribute('data-target'));
+                    let currentCount = Number(counter.innerText);
+                    const increment = targetCount / speed;
+                    if (currentCount < targetCount) {
+                        currentCount = Math.min(targetCount, currentCount + increment);
+                        counter.innerText = Math.floor(currentCount);
+                        setTimeout(update, 150);
+                    } else {
+                        counter.innerText = targetCount + "+"; // Add plus sign after animation finishes
+                    }
+                }
+                update();
+            });
+
+            // Stop observing after animation has started
+            observer.unobserve(target);
         }
-    }
-    upDate()
-})
+    });
+}
+
+// Options for the Intersection Observer
+const options = {
+    threshold: 0.8 // Trigger when almost fully visible
+};
+
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(startCounterAnimation, options);
+
+// Target the section you want to observe
+const section = document.querySelector('.section-work-data');
+
+// Start observing the section
+observer.observe(section);
+
      </script>
     <!-- Milestone End -->
 

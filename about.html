@@ -28,7 +28,7 @@
         <!-- Main Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
+    <body oncontextmenu="return false;"> 
     <body>
         <!-- Header Section Start -->
         <header class="header">
@@ -37,14 +37,15 @@
                     <img src="img/header logo.png" class="logo-img"/>
                     <h1 class="logo-title">CubeAISolutions</h1>
                   </div>
+          
 
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li class="menu-active"><a href="about.html">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="service.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="menu-active"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,7 +59,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="index.html">Home </a>
-                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -66,114 +67,159 @@
         </section>
         <!-- Banner Section End-->
 
-        <!-- About Us Section Start-->
-        <section class="about">
-            <div class="container">
-              <header class="section-header">
-                <h3>About Us</h3>
-                <p>
-                  CubeAISolutions is an innovative AI company that aims to
-                  revolutionize business through innovative GenAI products and
-                  solutions.
-                </p>
-              </header>
-      
-              <div class="row align-items-center about-row">
-                <div class="col-md-6">
-                  <img src="img/cubeai logo.png" alt="" class="img-fluid" />
-                </div>
-                <div class="col-md-6">
-                  <h2 class="title">
-                    <a href="#">Welcome to Our CubeAISolutions</a>
-                  </h2>
-                  <p class="title-p">
-                    Here’s our brief overview, GenAI product development for web and
-                    cybersecurity solutions for FinTech applications, we’re
-                    specialized in leveraging artificial intelligence (AI) to
-                    streamline operations and enhance efficiency. <br />
-                    Headquarters - Headquartered in Coimbatore, have operations in
-                    Bangalore, Chennimalai and UK. <br />
-                    Team Size - CubeAISolutions employs a teams of 20 dedicated
-                    professionals who are passionate about leveraging AI for building
-                    innovative AI products and solutions.
-                  </p>
-                  <!-- <div class="read-more"> 
-                    <a href="#">Read More</a>
-                  <!-- </div> -->
+        <!-- Contact Section Start -->
+        <section class="contact">
+          <div class="container">
+            <div class="section-header">
+              <h3 class="section-title">Contact Us</h3>
+            </div>
+    
+            <div class="row contact-info">
+              <div class="col-md-4">
+                <div class="contact-address">
+                  <i class="ion-md-pin"></i>
+                 </br>
+                  <div class="popup" id="address-popup">
+                    <h2>Address</h2>
+                    <address>
+                      <h3>Coimbatore</h3>
+                     416/1, veejay capella complex, <br>3, Cross Cut Road, Vivekananda Rd, <br>Gandhipuram, Coimbatore-641012,<br>Tamilnadu.
+                    </address><br>
+                    <h3>Bangalore</h3>
+                    <address>No 1186, 401 Vindhya Aaradhya, <br>8th Corss Anantha Nagar, <br>Electronic City Phase-2, <br>Bangalore-560100</address><br>
+                    <address>
+                      <h3>Chennimalai</h3>
+                      112/14 , Cube Square,<br> Shri Mullai Nagar,<br> Chennimalai, Erode-638051,<br>Tamilnadu.</address>
+                    <button onclick="closePopup('address-popup')">Close</button>
+                  </div>
+                
+                  <button class="btn-open-popup-AD" onclick="openPopup('address-popup')">ADDRESS</button>
+                
+                  <script>
+                    function openPopup(popupId) {
+                      document.getElementById('overlay').style.display = 'block';
+                      document.getElementById(popupId).style.display = 'block';
+                    }
+                
+                    function closePopup(popupId) {
+                      document.getElementById('overlay').style.display = 'none';
+                      document.getElementById(popupId).style.display = 'none';
+                    }
+                  </script>
+                
+                 
                 </div>
               </div>
-      
-              <div class="row about-cols">
-                <div class="col-md-4">
-                  <div class="about-col">
-                    <div class="img">
-                      <img src="img/about-missio.jpg" alt="" class="img-fluid" />
-                      <div class="icon"><i class="ion-ios-disc"></i></div>
-                    </div>
-                    <h2 class="title"><a href="#">Our Mission</a></h2>
-                    <p class="title-p">
-                      CubeAISolutions pioneers AI-driven solutions for business,
-                      revolutionizing cybersecurity with our innovative GenAI
-                      platforms. We at CubeAISolutions dedicated to transform digital
-                      landscapes with advanced AI-powered tools, empowering clients
-                      with cutting-edge technologies for a safer and more secured
-                      software products.
-                    </p>
+    
+              <div class="col-md-4">
+                <div class="contact-phone">
+                  <i class="ion-md-call"></i>          
+                  <div class="popup" id="phone-number-popup">
+                    <h2>Phone Number</h2>
+                    <p>phone number</p>
+                    <p>Jayapragash <a href="tel:9789578578">+91 9789578578</a></p>
+                    <p>Navaneethan<a href="tel:8883921424">+91 8883921424</a></p>
+                    <button onclick="closePopup('phone-number-popup')">Close</button>
+                  </div>
                 
-                    <div class="read-more">
-                      <a href="#">Read More</a>
-                       </br>
-                    </div>
-                  </div>
+                  <button class="btn-open-popup-PN" onclick="openPopup('phone-number-popup')">PHONE NUMBER</button>
+                
+                  <script>
+                    function openPopup(popupId) {
+                      document.getElementById('overlay').style.display = 'block';
+                      document.getElementById(popupId).style.display = 'block';
+                    }
+                
+                    function closePopup(popupId) {
+                      document.getElementById('overlay').style.display = 'none';
+                      document.getElementById(popupId).style.display = 'none';
+                    }
+                  </script>
                 </div>
-      
-                <div class="col-md-4">
-                  <div class="about-col">
-                    <div class="img">
-                      <img src="img/about-visio.jpg" alt="" class="img-fluid" />
-                      <div class="icon"><i class="ion-ios-eye"></i></div>
-                    </div>
-                    <h2 class="title"><a href="#">Our Vision</a></h2>
-                    <p class="title-p">
-                      CubeAISolutions empower organizations with innovative solutions.
-                      Provide exceptional service, foster collaboration, and drive
-                      positive changes . CubeAISolutions committed to excellence and
-                      integrity, using AI technologies to transform lives.
-                    </p>
-                    <div class="read-more">
-                      <a href="#">Read More</a>
-                     </br>
-                     </br>
-                    </br>
-                    </div>
+              </div>
+    
+              <div class="col-md-4">
+                <div class="contact-email">
+                  <i class="ion-md-mail"></i>
+                 </br>
+                  <div class="popup" id="email-address-popup">
+                    <h2>Email </h2>
+                    <p>Email: <a href="cubecorpsol@gmail.com">cubecorpsol@gmail.com</a></p>
+                    <button onclick="closePopup('email-address-popup')">Close</button>
                   </div>
-                </div>
-      
-                <div class="col-md-4">
-                  <div class="about-col">
-                    <div class="img">
-                      <img src="img/about-objectiv.jpg" alt="" class="img-fluid" />
-                      <div class="icon"><i class="ion-ios-options"></i></div>
-                    </div>
-                    <h2 class="title"><a href="#">Our Objective</a></h2>
-                    <p class="title-p">
-                      Our objective at CubeAISolutions is to revolutionize the world
-                      of artificial intelligence by creating innovative solutions that
-                      enhance human productivity, improve decision-making, and drive
-                      positive societal impact. We strive to develop cutting-edge AI
-                      based intelligent tools and Technologies.
-                    </p>
-                    <div class="read-more">
-                      <a href="#">Read More</a>
-                      </br>
-                      </br>
-                    </div>
-                  </div>
+                
+                  <button class="btn-open-popup-EM" onclick="openPopup('email-address-popup')">Email</button>
+                
+                  <script>
+                    function openPopup(popupId) {
+                      document.getElementById('overlay').style.display = 'block';
+                      document.getElementById(popupId).style.display = 'block';
+                    }
+                
+                    function closePopup(popupId) {
+                      document.getElementById('overlay').style.display = 'none';
+                      document.getElementById(popupId).style.display = 'none';
+                    }
+                  </script>
                 </div>
               </div>
             </div>
-          </section>
-        <!-- About Us Section End -->
+    
+            <div class="row">
+              <div class="col-md-6">
+                <div class="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3914.3623332942966!2d77.60951137504749!3d11.160785489012323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA5JzM4LjgiTiA3N8KwMzYnNDMuNSJF!5e0!3m2!1sen!2sin!4v1708781583408!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form">
+                  <form class="contactForm">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Name"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Subject"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        rows="5"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <div><button type="submit">Send Message</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Section End -->
 
         <!-- Footer Start -->
         <footer class="footer">
