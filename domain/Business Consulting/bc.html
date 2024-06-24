@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <link rel="stylesheet" href="bc.css" />
+    <link rel="icon" type="image/cube-icon" href="../../../favicon.png">
   </head>
   <title>Business Consulting</title>
   <body>
@@ -17,20 +18,20 @@
       <header id="navbar">
           <div class="navbar-logo">
               <img src="images/cas-logo.svg" alt="Logo" />
-              <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span style="color: #004e69">A</span><span style="color: #2596be">i</span><span style="color: #004e69">S</span>olutions</a>
+              <a class="cubeaisolutions"><span style="color: #004e69">C</span>ube<span style="color: #004e69">A</span><span style="color: #2596be">I</span><span style="color: #004e69">S</span>olutions</a>
           </div>
           <div class="navbar-right">
               <nav>
                   <ul class="nav-links">
-                      <li><a href="#navbar">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#service">Services</a></li>
-                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="../../index/index.html">Home</a></li>
+                      <li><a href="../../index/About us/about us.html">About</a></li>
+                      <li><a href="../../index/Service Page/Service.html">Services</a></li>
+                      <li><a href="../../index/contact-us/contact.html">Contact</a></li>
                   </ul>
               </nav>
-              <div class="search-menu-icon">
+              <!-- <div class="search-menu-icon">
                   <img src="images/searchIcon.svg" alt="search-icon" />
-              </div>
+              </div> -->
               <div class="search-menu-icon menu-icon menu-head" onclick="togglePopup('popup', this)">
                   <img src="images/menuicon.svg" alt="menu-icon" />
                   <i class="fas fa-caret-down"></i>
@@ -45,20 +46,20 @@
                           </svg>
                       </div>
                       <div class="popup-links">
-                          <a href="#navbar" class="popup-links-content1">Home</a>
-                          <a href="#about" class="popup-links-content1">About Us</a>
-                          <a href="#service" class="popup-links-content1">Services</a>
-                          <a href="#contact" class="popup-links-content1">Contact</a>
+                          <a href="../../index/index.html" class="popup-links-content1">Home</a>
+                          <a href="../../index/About us/about us.html" class="popup-links-content1">About Us</a>
+                          <a href="../../index/Service Page/Service.html" class="popup-links-content1">Services</a>
+                          <a href="../../index/contact-us/contact.html" class="popup-links-content1">Contact</a>
                           <a href="#">Industries</a>
                           <a href="#">Gallery</a>
                           <a href="#">Careers</a>
                       </div>
                       <div class="popup-social-icons">
-                          <a href=""><img src="images/Twitter.svg" alt="Twitter"></a>
-                          <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA=="><img src="images/Instagram.svg" alt="Instagram"></a>
-                          <img src="images/Facebook.svg" alt="Facebook">
-                          <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd"><img src="images/Linkedin.svg" alt="LinkedIn"></a>
-                      </div>
+                        <a href="https://x.com/CubeAISolutions" target="_blank"><img src="images/Twitter.svg" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/cubeaisolutions_tech?igsh=MXEzamNmbTRsYmlyMA==" target="_blank"><img src="images/Instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561157782258" target="_blank"><img src="images/Facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.linkedin.com/company/cubeaisolutions-tech-pvt-ltd" target="_blank"><img src="images/Linkedin.svg" alt="LinkedIn"></a>
+                    </div>
                   </div>
               </div>
           </div>
@@ -66,7 +67,7 @@
       <div class="header-content" id="header-content">
           <div class="pop-head">
               <div class="logo" id="header-logo">
-                  <h1 class="back">&larr;</h1>
+                  <h1 class="back"><a href="../../index/Service Page/Service.html"><i class="fas fa-arrow-left"></i></a></h1>
                   <h1 id="app-development-title">Business Consulting</h1>
               </div>
               <div class="search-menu-icon menu-icon" onclick="togglePopup('header-popup', this)">
@@ -105,8 +106,8 @@
     <!-- ///////// -->
 
     <div class="hero">
-      <div class="hero-text">
-        <h1>"Navigating Pathways to <br />Business Excellence"</h1>
+      <div class="hero-text"  >
+        <h1>Navigating Pathways to <br />Business Excellence</h1>
         <p>
           Our business consulting services encompass strategic planning,<br />
           market analysis, and advisory services to help clients define <br />
@@ -116,11 +117,11 @@
       </div>
     </div>
     <main>
-      <section class="contentt">
+      <section class="contentt" id="what-we-do">
         <div class="image-container">
           <img src="images/Rectangle 1368.png" alt="Consulting Illustration" />
         </div>
-        <div class="text-container">
+        <div class="text-container" >
           <h2>What we do ?</h2>
           <p>
             Our business consulting services encompass strategic planning,
@@ -135,7 +136,7 @@
       </section>
       <!-- /////one/////// -->
       <section>
-        <div class="container">
+        <div class="container" id="tough_challenge">
           <h1>Tackling Your Toughest Challenges in <br>the Business Consulting:</h1>
           <div class="content">
             <div class="text-block x">
@@ -332,7 +333,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="trending">
         <div class="container-btm">
           <h1>What's Trending in the Business Consulting:</h1>
           <div class="trend-card">
@@ -357,6 +358,7 @@
     </main>
     <div class="main-container">
       <div class="contact-form-container">
+
         <div class="header-form">
           <div class="company-info">
             <div class="company-logo">
@@ -372,44 +374,56 @@
             <h2>For Enquiry</h2>
           </div>
         </div>
-        <form id="enquiryForm" class="contact-form">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="aac69ced-9d46-4fec-a5ba-97d7cd98b5ed">
+          <input type="hidden" name = "Page" value="Business Consulting">
 
+          <div class="input-container">
           <div class="form-group"><h3>Name</h3>
-            <input type="hidden" id="domain" value="Business Consulting">
-
             <input
               type="text"
               id="fullName"
-              name="fullName"
+              name="Name"
               placeholder="Enter your Name.."
             />
+            <i class="fas fa-user icon"></i>
           </div>
+        </div>
+        <div class="input-container">
           <div class="form-group"><h3>Phone No</h3>
             <input
               type="tel"
               id="phoneNumber"
-              name="phoneNumber"
+              name="Phone Number"
               placeholder="Enter your Phone Number.."
             />
+            <i class="fas fa-phone icon"></i>
           </div>
+        </div>
+        
           <div class="form-group"><h3>Email</h3>
+            <div class="input-container email">
             <input
               type="email"
               id="email"
-              name="email"
+              name="Email"
               placeholder="Enter your Email.."
             />
+            <i class="fas fa-envelope icon"></i>
           </div>
+        </div>
+
+        <!-- \\\\\\ -->
           <div class="form-group"><h3>Message</h3>
+            <div class="pencil"><i class="fas fa-pencil-alt"></i></div>
             <textarea
               id="message"
-              name="message"
+              name="Message"
               placeholder="Your message here.."
               rows="4"
             ></textarea>
-          </div>
-          
-        <!-- </form> -->
+          </div>        
+       
         <center>
           <button type="submit">Submit</button>
         </center>
@@ -466,7 +480,5 @@ document.addEventListener('click', function(event) {
     }
 });
     </script>
-        <script src="../indexedDB.js"></script>
-
   </body>
 </html>

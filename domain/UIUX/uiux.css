@@ -268,11 +268,17 @@ a {
     width: 100%;
     z-index: 1000;
 }
-
+.back-arrow{
+    color: white!important;
+}
 .navbar-brand {
     color: white;
     font-weight: 800;
     font-size: 20px;
+}
+
+.navbar-brand:hover{
+    color: white;
 }
 
 .navbar .nav-link {
@@ -1138,7 +1144,7 @@ a {
 
 .form-container {
     max-width: 1500px;
-    margin: 200px auto 0 auto;
+    margin: 100px auto 0 auto;
     padding: 20px;
     border-radius: 5px;
     background-color: #fff;
@@ -1213,6 +1219,12 @@ button.btn-primary {
 .btn-container {
     text-align: center;
     align-items: center;
+}
+
+@media (max-width:1024px) {
+    .form-container{
+        margin-top: 230px;
+    }
 }
 
 

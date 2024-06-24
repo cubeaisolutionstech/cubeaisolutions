@@ -253,11 +253,17 @@ a {
     width: 100%;
     z-index: 1000;
 }
-
+.back-arrow{
+    color: white!important;
+}
 .navbar-brand {
     color: white;
     font-weight: 800;
     font-size: 20px;
+}
+
+.navbar-brand:hover{
+    color: white;
 }
 
 .navbar .nav-link {
@@ -275,114 +281,13 @@ a {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Sidebar styles */
-/* .sidebar {
-    height: 25%;
-    width: 190px;
-    position: fixed;
-    top: 13%;
-    right: -250px; 
-    background-color: white;
-    overflow-y: auto;
-    transition: 0.3s;
-    padding-top: 30px;
-    z-index: 9999;
-    
-}
 
-.sidebar.show {
-    right: 0; 
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 15px;
-    background: none;
-    border: none;
-    color: #4e6285;
-    cursor: pointer;
-}
-
-.sidebar .nav-item {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.sidebar a {
-    padding: 5px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #4e6285;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #4e6285 !important;
-}
-
-@media (max-width: 475px) {
-    .navbar .collapse {
-        display: none;
-    }
-
-    .sidebar{
-        height: 20%;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
-    .sidebar {
-        right: -250px;
-    }
-
-    .sidebar.show {
-        right: 0;
-    }
-
-    .navbar-brand {
-        margin: 5px;
-        color: white;
-        font-size: 15px;
-    }
-
-    .sidebar a {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 790px) {
-    .navbar .collapse {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
-    .sidebar {
-        right: -250px;
-    }
-
-    .sidebar.show {
-        right: 0;
-    }
-
-    .navbar {
-        position: sticky;
-        top: 60px;
-    }
-} */
-
+/* sidebar styles */
 .sidebar {
-    height: 200px !important; /* Set a fixed height for the sidebar */
+    height: 200px !important; 
     width: 190px;
     position: fixed;
-    top: 126px !important; /* Adjust top to match the height of the navbar */
+    top: 126px !important; 
     right: -250px; 
     background-color: white;
     overflow-y: auto;

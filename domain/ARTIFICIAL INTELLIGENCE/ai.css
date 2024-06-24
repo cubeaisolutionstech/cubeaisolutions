@@ -252,11 +252,18 @@ a {
     width: 100%;
     z-index: 1000;
 }
-
+.back-arrow{
+    color: white!important;
+}
 .navbar-brand {
     color: white;
     font-weight: 800;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar-brand:hover{
+    color: white;
 }
 
 .navbar .nav-link {

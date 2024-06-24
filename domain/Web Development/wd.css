@@ -271,11 +271,17 @@ a {
     width: 100%;
     z-index: 1000;
 }
-
+.back-arrow{
+    color: white!important;
+}
 .navbar-brand {
     color: white;
     font-weight: 800;
     font-size: 20px;
+    cursor: pointer;
+}
+.navbar-brand:hover {
+    color: #fff;
 }
 
 .navbar .nav-link {
@@ -351,8 +357,8 @@ a {
 
     .sidebar {
         right: -250px;
-        height: 450px; /* Maintain the fixed height */
-        top: 120px !important; /* Adjust top to match the height of the navbar */
+        height: 450px;
+        top: 120px !important;
     }
 
     .sidebar.show {
@@ -555,11 +561,12 @@ a {
 
 /* content section-2 */
 h1 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
+    padding: 0 120px;
 }
 
 .card-image {
@@ -726,7 +733,7 @@ h4 {
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .container-custom {
@@ -797,10 +804,10 @@ label {
 
 
 .form-heading {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     position: absolute;
-    left: 58%;
+    left:50%;
     transform: translateX(-50%);
 }
 

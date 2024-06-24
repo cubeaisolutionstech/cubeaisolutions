@@ -4,7 +4,9 @@ body {
     width:100%;
     font-family: 'lato', sans-serif;
 }
-
+*{
+    font-family: 'lato', sans-serif;
+}
 /* header {
     display: flex;
     justify-content: space-between;
@@ -162,12 +164,16 @@ nav ul li a {
     padding: 20px;
     padding-left: 30px;
 }
+.fas{
+    color: white;
+}
 .left_arrow{
     width: 22px;
     font-size: 2em;
     margin-left: -6%;
     margin-top: 9%;
     padding:0 3% ;
+    color: white!important;
 }
 .hero_four-content p{
     font-size: 1em;
@@ -214,6 +220,11 @@ nav ul li a {
     margin-left:40% ;
     
 }
+.robthand img{
+    width:600px ;
+    
+}
+
 
 .info-box {
     background-color: #005a72;;
@@ -234,8 +245,8 @@ nav ul li a {
 }
 
 .info-box{
-    margin-top: -150px;
-    margin-left: 22%;
+    margin-top: -256px;
+    margin-left: 21%;
 }
 
 .info-box{
@@ -244,8 +255,8 @@ nav ul li a {
 
 }
 .image-info img{
-    margin-left: 43%;
-    margin-top: -135px;
+    margin-left: 39%;
+    margin-top: -66px;
 }
 .image-info.last img{
     margin-left: 43%;
@@ -269,7 +280,7 @@ nav ul li a {
     border-radius: 10px;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 57%;
+    margin-left: 55%;
     margin-top: -20%;
 }
 .info-box_flip h2 {
@@ -288,7 +299,7 @@ nav ul li a {
 }
 .info-box_flip{
     position: absolute;
-    top: 673px;
+    top: 670px;
    
 }
 .image-info_flip{
@@ -779,6 +790,7 @@ nav ul li a {
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
+    margin-top: -90px;
 }
 
 .contact-form-container {
@@ -1076,5 +1088,40 @@ button:hover {
     .fir{
         margin-top: 190px;
         width: 100%;
+    }
+}
+.input-container {
+    position: relative;
+    
+}
+
+
+
+.input-container .icon {
+        position: absolute;
+        top: 78%;
+        right: 0px;
+        transform: translateY(-50%);
+        font-size: 17px;
+        color: #cccccc;
+}
+.pencil i{
+        transform: translateY(250%);
+        font-size: 14px;
+        color: #cccccc;
+}
+.pencil{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+@media (min-width:1900px ) and (max-width: 1921px) {
+    .hero.fir ,.hero.sec,.hero.thrid ,.video-section{
+        width: 101%;
+    }
+    .bars {
+        margin-right: -19px;
+        padding-right: 10px;
     }
 }

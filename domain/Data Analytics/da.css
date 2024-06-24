@@ -270,13 +270,18 @@ a {
     width: 100%;
     z-index: 1000;
 }
-
+.back-arrow{
+    color: white!important;
+}
 .navbar-brand {
     color: white;
     font-weight: 800;
     font-size: 20px;
+    cursor: pointer;
 }
-
+.navbar-brand:hover {
+    color: #fff;
+}
 .navbar .nav-link {
     margin: 5px;
     color: white;
@@ -1045,32 +1050,32 @@ a {
     }
 
     .trend-item:nth-child(4) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(3) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(2) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(5) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(6) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(1) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 }
@@ -1079,6 +1084,10 @@ a {
     .trending{
         font-size: 20px;
     }
+    /* #trending{
+        margin-left: 50px !important;
+        align-items: center;
+    } */
     .trend-item .content h5 {
         font-size: 20px;
         font-weight: 800;
@@ -1090,32 +1099,32 @@ a {
     }
 
     .trend-item:nth-child(4) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(3) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(2) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(5) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(6) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(1) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 }
@@ -1130,32 +1139,32 @@ a {
     }
 
     .trend-item:nth-child(4) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(3) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(2) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(5) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(6) {
-        margin-left: 0px;
+        margin-left:15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(1) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 }
@@ -1169,37 +1178,37 @@ a {
         font-size: 10px;
     }
     .trend-item:nth-child(4) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(3) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(5) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(2) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(6) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 
     .trend-item:nth-child(1) {
-        margin-left: 0px;
+        margin-left: 15px;
         max-width: 90%;
     }
 }
 /* enquiry */
-.form-header {
+/* .form-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1339,4 +1348,152 @@ button.btn-primary {
         font-weight: 800;
     }
 }
+ */
 
+ .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.form-control-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.position-relative {
+    position: relative;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+.form-heading {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.textarea-container {
+    position: relative;
+}
+
+.textarea-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ccc;
+}
+
+textarea {
+    padding-right: 30px;
+}
+
+input.form-control,
+textarea.form-control {
+    background-color: rgba(242, 242, 242, 1);
+    color: #333;
+    padding-right: 40px;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    background-color: rgba(242, 242, 242, 1);
+    box-shadow: none;
+}
+
+button.btn-primary {
+    max-width: 50%;
+    width: 100px;
+    background-color: rgba(37, 150, 190, 1);
+    border: none;
+}
+
+.btn-container {
+    text-align: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .form-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-heading {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .company-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 375px) {
+    .form-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-heading {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .company-name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

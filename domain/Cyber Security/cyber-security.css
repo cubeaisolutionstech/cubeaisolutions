@@ -86,7 +86,6 @@ body {
     right: 0;
     width: 200px;
     height: auto;
-    background-color: #07135ecf;
     z-index: 1000;
     opacity: 0.86;
 }
@@ -109,7 +108,10 @@ body {
     font-size: 22px;
     font-family: 'Lato', sans-serif;
 }
+.p-black{
+    background-color: #000000cf;
 
+}
 .popup-close {
     position: absolute;
     top: 10px;
@@ -243,6 +245,11 @@ body {
 }
 
 .header-content .nav-links li a {
+    color: white;
+}
+i.fas.fa-arrow-left {
+    font-size: 30px;
+    margin-top: 5px;
     color: white;
 }
 
@@ -569,7 +576,6 @@ body {
     flex: 1 1 calc(50% - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: 100vh;
 }
 
 .content-section img {
@@ -639,8 +645,8 @@ body {
 .trend-card p {
     color: #fff;
     margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 100;
     line-height: 31.2px;
     text-align: left;
     padding: 0 24px 30px;
@@ -706,7 +712,26 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
+.form-control-icon {
+    position: absolute;
+    /* right: 121px; */
+    /* top: -218px; */
+    /* transform: translateY(-50%); */
+    color: #bfb6b6;
+    z-index: 1000;
+    margin-left: -30px;
+    margin: 9px -31px;
+}
+.textarea-icon{
+    position: absolute;
+    /* right: 121px; */
+    /* top: -218px; */
+    /* transform: translateY(-50%); */
+    color: #bfb6b6;
+    z-index: 1000;
+    margin-left: -30px;
+    margin: 9px -31px;
+}
 .contact-form .form-group {
     width: 100%;
 }
@@ -920,7 +945,10 @@ button:hover {
     .header-content .logo h1 {
         display: block;
     }
-
+    i.fas.fa-arrow-left {
+        font-size: 20px;
+        margin-top: 5px;
+    }
     .header-content .logo h1 {
         font-size: 23px;
         font-weight: bold;
@@ -1315,7 +1343,7 @@ button:hover {
 
     .iot-security img {
         width: 100%;
-        height: auto;
+        height: 40%;
         margin-top: -5px;
         border-radius: 10px;
     }
@@ -1447,7 +1475,10 @@ button:hover {
     .header-content .logo h1 {
         display: block;
     }
-
+    i.fas.fa-arrow-left {
+        font-size: 30px;
+        margin-top: 9px;
+    }
     .search-icon img {
         display: none;
     }

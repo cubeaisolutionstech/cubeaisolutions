@@ -275,6 +275,10 @@ a {
     color: black;
     font-weight: 800;
     font-size: 20px;
+    cursor: pointer;
+}
+.navbar-brand:hover {
+    color: black;
 }
 
 .navbar .nav-link {
@@ -1175,7 +1179,7 @@ a {
 }
 
 .company-name {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -1210,10 +1214,10 @@ label {
 }
 
 .form-heading {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     position: absolute;
-    left: 56%;
+    left: 50%;
     transform: translateX(-50%);
 }
 

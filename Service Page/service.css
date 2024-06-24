@@ -10,6 +10,7 @@ body {
 }
 
 #navbar {
+    z-index: 1000;
     margin-top: -92px;
     position: fixed;
     width: 100%;
@@ -227,6 +228,9 @@ body {
     color:#004E69;
 }
 
+.grid-item a{
+    text-decoration: none;
+}
 .grid-item:hover {
     transform: translateY(-10px);
 }
@@ -1054,38 +1058,238 @@ button:hover {
         }
     }
 
-    /* @media (width:375px) {
-        .grid-item img {
-            margin-left: 20px;
+    @media (max-width: 760px) {
+        footer {
+            margin-top: 80%;
         }
-
     }
-        
-    @media (width:425px) {
-        .grid-item img {
-            margin-left: 32px;
-        }
 
-    } */
     
-
- @media (max-width: 760px) {
-
-       footer {
-        margin-top: 80%;
-       }
+    
+    footer {
+        background-color: black;
+        background-image: url(footer.png);
+        padding: 20px 0;
+        font-size: 14px;
+        color: white;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 25px;
+    }
+    
+    .company-logo img {
+        width: 60px;
+        padding-left: 10px;
+    }
+    
+    .head {
+        display: flex;
+    }
+    
+    .company-info p {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: justified;
+    }
+    
+    .quick-links h3 {
+        font-family: Lato;
+        font-size: 32px;
+        font-weight: 500;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    
+    .quick-links li {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 5px 0;
+        list-style-type: disc;
+        padding-left: 10px;
+        list-style-type: none;
+    }
+    
+    .contact-info h3 {
+        font-family: Lato;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 34px;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    
+    .contact-info {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: justified;
+    }
+    
+    .contact-info ol {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        list-style-type: disc;
+        padding-left: 57px;
+    }
+    
+    .places {
+        list-style-type: disc;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    .company-info, .quick-links, .contact-info, .enquiry-form {
+        margin: 20px;
+        flex: 1;
+    }
+    
+    .contact-info .add {
+        padding-left: 22px;
+        font-size: 18px;
+        margin-top: -30px;
+    }
+    .list li{
+        font-size: 18px;
+    }
+    
+    .quick-links ul, .contact-info ul {
+        padding: 0;
+    }
+    
+    .quick-links ul li, .contact-info ul li {
+        margin: 5px 0;
+    }
+    
+    .quick-links ul li a, .contact-info a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .enquiry-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .enquiry-form input, .enquiry-form textarea {
+        margin: 5px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .enquiry-form button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        background-color: white;
+        color: black;
+    }
+    
+    .icon {
+        margin-right: 5px;
+    }
+    
+    .company-logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-form-container {
+        padding: 30px;
+        width: 100%;
+        max-width: 1380px;
+        height: auto;
+    }
+    
+    .header-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .header-form h2 {
+        width: 245px;
+    }
+    
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .contact-form .form-group {
+        width: 100%;
+    }
+    
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+    
+    .contact-form .form-group:nth-child(1) {
+        grid-column: 1 / 2;
+    }
+    
+    .contact-form .form-group:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+    
+    .contact-form .form-group:nth-child(3),
+    .contact-form .form-group:nth-child(4) {
+        grid-column: 1 / -1;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100px;
+        margin-top: 20px;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+        transition: background-color 0.3s ease;
+    }
+    
+    @media (max-width: 760px) {
+        
         .footer-container {
             display: contents;
             justify-content: space-around;
             flex-wrap: wrap;
             padding: 0;
-        }
-
-        .contact-info h3 {
-            font-size: 22px;
-        }
-        .quick-links li {
-            font-size: 20px;
         }
     
     
@@ -1104,7 +1308,7 @@ button:hover {
         }
     
         .quick-links h3 {
-            font-size: 22px;
+            font-size: 28px;
         }
     
         .quick-links a {
@@ -1117,14 +1321,17 @@ button:hover {
         }
     
         .contact-info .add {
-            padding-left: 60px;
-            font-size: 14px;
+            /* padding-left: 60px; */
+            font-size: 15px;
         }
     
         .contact-info ol {
             font-size: 20px;
             padding-left: 27px;
             column-gap: 25px;
+        }
+        .list li{
+            font-size: 20px;
         }
     
         .header-form {
@@ -1134,6 +1341,9 @@ button:hover {
     
         .company-info {
             margin-bottom: 10px;
+        }
+        .contact-info{
+            padding-top: 20px;
         }
     
         .contact-form {
@@ -1148,11 +1358,12 @@ button:hover {
         }
     
         .company-info h1 {
-            font-size: 22px;
+            font-size: 21px;
         }
     }
-     @media (min-width: 426px) and (max-width: 770px) {
     
+    @media (min-width: 426px) and (max-width: 770px) {
+        
         .company-info {
             margin: 10px 0;
             align-self: center;
@@ -1175,14 +1386,27 @@ button:hover {
             padding: 0;
         }
     }
-     @media (min-width: 768px) and (max-width: 1140px) {
-    .contact-info a {
+    
+    @media (min-width: 768px) and (max-width: 1140px) {
+       
+        .contact-info a {
             color: white;
             text-decoration: none;
             font-size: 20px;
-        }}
-@media (min-width: 770px) and (max-width: 1024px) {
-     .enquiry-title h2 {
+        }
+    }
+    @media (min-width: 426px) and (max-width: 770px) {
+        
+        .header-form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    @media (min-width: 770px) and (max-width: 1024px) {
+       
+        .enquiry-title h2 {
             font-size: 24px;
             margin-left: 410px;
         }
@@ -1222,14 +1446,69 @@ button:hover {
     
         }
     }
-
-     @media (min-width: 1025px) {
-     .enquiry-title h2 {
+    
+    @media (min-width: 1025px) {
+        
+        .enquiry-title h2 {
             font-size: 26px;
             margin-left: 580px;
         }
     
     }
+    
+    .enquiry-title h2{
+        font-size: 30px;
+    }
+    
+    
+    @media (max-width: 426px) {
+        .container h1 {
+            font-size: 30px;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+      }
+    
+      .input-container {
+        position: relative;
+        
+    }
+    
+    
+    
+    .input-container .icon {
+            position: absolute;
+            top: 70%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-size: 17px;
+            color: #cccccc;
+    }
+    .pencil i{
+        transform: translateY(250%);
+        font-size: 14px;
+        color: #cccccc;
+        margin-right:12px;     
+    }
+    .pencil{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .input-container.email i{
+        top: 50%;
+        right: 10px;
+    }
+    
+    @media (min-width: 426px) and (max-width: 768px)  {
+        .content {
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+      }
 
 
 

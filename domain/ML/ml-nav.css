@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'lato', sans-serif;
+}
   #navbarr,#navbar {
     background-color: white;
     display: flex;

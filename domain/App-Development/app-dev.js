@@ -1,3 +1,45 @@
+document.getElementById('what-to-do-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('what-to-do').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('solutions-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('solutions').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('trending-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('trending').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('future-plan-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('future-plan').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+document.querySelectorAll('.sidebar-nav .nav-link').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        var sectionId = this.getAttribute('href').substring(1); 
+        scrollToSection(sectionId); 
+    });
+});
+
 function togglePopup(popupId, icon) {
     const popup = document.getElementById(popupId);
     const isActive = popup.classList.contains("active");
