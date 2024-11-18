@@ -1806,7 +1806,10 @@ footer {
   background-color: white;
   color: black;
 }
-
+.footer-bottom  a {
+  color: blue;
+text-decoration: none;
+}
 .icon {
   margin-right: 5px;
 }
