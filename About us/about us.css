@@ -53,10 +53,6 @@ body {
     margin-right: 20px;
 }
 
-.activate.active{
-  color:  #004E69;
-}
-
 .nav-links li a {
     text-decoration: none;
     color: black;

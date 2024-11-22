@@ -58,10 +58,6 @@
   .nav-link li a:hover {
     color: #004e69; /* Change color on hover */
   }
-
-  .activate.active{
-    color:  #004E69;
-  }
   
   .search-menu-icon img {
     width: 25px;

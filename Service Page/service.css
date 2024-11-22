@@ -74,10 +74,6 @@ body {
     color: #004E69;
 }
 
-.activate.active{
-    color:  #004E69;
-  }
-
 .search-icon img {
     display: none;
 }
